@@ -3,5 +3,5 @@
 ## HW_1
 
 ### Linux terminal (GitBash) commands
-1. Посмотреть где я
+1. Посмотреть где я #
 `pwd`
