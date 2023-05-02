@@ -7,6 +7,4 @@
     `pwd`
     
 2. Создать папку
-```
-mkdir test1
-```
+```mkdir test1```
