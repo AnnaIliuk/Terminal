@@ -4,4 +4,4 @@
 
 ### Linux terminal (GitBash) commands
 1. Посмотреть где я
->pwd
+<mark>pwd<mark>
