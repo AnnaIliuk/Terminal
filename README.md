@@ -40,7 +40,7 @@ mkdir 1_1 1_2 1_3
 
 8. Вывести список содержимого папки
 ```
-ls
+ls -la
 ```
 
 8. Открыть любой txt файл
@@ -205,10 +205,90 @@ the sec 2
 ```
 
 11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
+```
 cat >> tf_2.txt
 the sec 3
+```
 
+12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
+```
+cat >> tf_3.txt
+the SeCoNd 2
+```
 
+13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
+```
+cat >> tf_2.txt
+the seConD 2
+```
 
+14. Сделать текстовый файл tf_4.txt , в котором будет 15 строк
+```
+seq 15 | cat > tf_4.txt
+```
 
+15. Сделать текстовый файл tF_5.txt , в котором будет 13 строк
+```
+seq 13 | cat > tF_5.txt
 
+16. Вывести список всех файлов в папке
+```
+ls -la
+```
+
+17. Выйти из папки inner_dir_1
+```
+cd ..
+```
+
+18. Вывести содержимое файла tf_3.txt в терминал
+```
+cat inner_dir_1/tf_3.txt
+13243535436
+w3536346
+46wewtwrfhfh
+the second 2
+the sec 2
+the SeCoNd 2
+```
+
+19. Найти путь к файлу tf_4.txt
+```
+find $(pwd) -name tf_4.txt
+/c/Users/anils/dir_1/inner_dir_1/tf_4.txt
+```
+
+20. Отчистить файл tf_4.txt от содержимого без удаления самого файла
+```
+cat > tf_4.txt
+```
+
+21. Найти путь к файлам, у которых есть  “tf” в названии
+```
+find $(pwd) -name "*tf*"
+/c/Users/anils/dir_1/inner_dir_1/tf_2.txt
+/c/Users/anils/dir_1/inner_dir_1/tf_3.txt
+/c/Users/anils/dir_1/inner_dir_1/tf_4.txt
+/c/Users/anils/dir_1/tf_1.txt
+/c/Users/anils/dir_1/tf_2.txt
+/c/Users/anils/dir_1/tf_4.txt
+```
+
+22. Найти путь к файлам, у которых есть  “tf” в названии и буквы в любом регистре
+```
+find $(pwd) -iname "*tf*"
+/c/Users/anils/dir_1/inner_dir_1/tf_2.txt
+/c/Users/anils/dir_1/inner_dir_1/tf_3.txt
+/c/Users/anils/dir_1/inner_dir_1/tf_4.txt
+/c/Users/anils/dir_1/inner_dir_1/tF_5.txt
+/c/Users/anils/dir_1/tf_1.txt
+/c/Users/anils/dir_1/tf_2.txt
+/c/Users/anils/dir_1/tf_4.txt
+```
+
+23. Найти строки в файлах, где есть комбинация букв “sec” в текущей папке
+```
+grep sec *
+```
+
+24.
