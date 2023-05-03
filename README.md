@@ -256,7 +256,6 @@ the SeCoNd 2
 19. Найти путь к файлу tf_4.txt
 ```
 find $(pwd) -name tf_4.txt
-/c/Users/anils/dir_1/inner_dir_1/tf_4.txt
 ```
 
 20. Отчистить файл tf_4.txt от содержимого без удаления самого файла
@@ -267,24 +266,11 @@ cat > tf_4.txt
 21. Найти путь к файлам, у которых есть  “tf” в названии
 ```
 find $(pwd) -name "*tf*"
-/c/Users/anils/dir_1/inner_dir_1/tf_2.txt
-/c/Users/anils/dir_1/inner_dir_1/tf_3.txt
-/c/Users/anils/dir_1/inner_dir_1/tf_4.txt
-/c/Users/anils/dir_1/tf_1.txt
-/c/Users/anils/dir_1/tf_2.txt
-/c/Users/anils/dir_1/tf_4.txt
 ```
 
 22. Найти путь к файлам, у которых есть  “tf” в названии и буквы в любом регистре
 ```
 find $(pwd) -iname "*tf*"
-/c/Users/anils/dir_1/inner_dir_1/tf_2.txt
-/c/Users/anils/dir_1/inner_dir_1/tf_3.txt
-/c/Users/anils/dir_1/inner_dir_1/tf_4.txt
-/c/Users/anils/dir_1/inner_dir_1/tF_5.txt
-/c/Users/anils/dir_1/tf_1.txt
-/c/Users/anils/dir_1/tf_2.txt
-/c/Users/anils/dir_1/tf_4.txt
 ```
 
 23. Найти строки в файлах, где есть комбинация букв “sec” в текущей папке
