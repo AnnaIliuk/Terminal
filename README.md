@@ -163,7 +163,18 @@ mkdir  inner_dir_1
 pwd
 ```
 
-4. Находясь в папке dir_1 , создать пустой текстовый файл tf_1.txt
+5. Находясь в папке dir_1 , создать пустой текстовый файл tf_1.txt
 ```
 touch tf_1.txt
+```
+
+6. Находясь в папке dir_1 , через команду cat создать текстовый файл tf_2.txt со следующими строками:
+- the first 1
+- the second 2
+- the third 3
+```
+cat > tf_2.txt
+- the first 1
+- the second 2
+- the third 3
 ```
