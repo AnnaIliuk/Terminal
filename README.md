@@ -142,3 +142,6 @@ chmod +x ./myscript.sh
 
 ---
 ## HW_2
+
+1. Сделать папку dir_1
+
