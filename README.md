@@ -305,7 +305,7 @@ grep -r second
 
 30. Найти только путь и название файла, в строках которых есть комбинация букв “second” в текущей папке
 ```
-grep -l second | xargs realpath
+grep second * | xargs realpath
 ```
 
 31. Найти все строки во всех файлах, где нет комбинации “second”
